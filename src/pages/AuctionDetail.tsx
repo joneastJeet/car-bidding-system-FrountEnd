@@ -56,7 +56,7 @@ const AuctionDetail: React.FC = () => {
     <div className="p-6 max-w-xl mx-auto">
       <h1 className="text-2xl font-bold mb-2">{auction?.title}</h1>
       <p>Status: {auction?.status}</p>
-      <p className="text-xl font-semibold mt-4">Highest Bid: ${useAuctionStore.getState().currentBid}</p>
+      <p className="text-xl font-semibold mt-4">Highest Bid: Rs {useAuctionStore.getState().currentBid}</p>
 
       <div className="mt-6">
         <input
