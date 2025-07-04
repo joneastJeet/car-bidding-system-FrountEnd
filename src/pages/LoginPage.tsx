@@ -13,7 +13,7 @@ const LoginPage: React.FC = () => {
     try {
       const res = await api.post('/auth/login', { userName, password });
       const token = res.data?.access_token;
-      if (token) login(token);
+      if (token) login(token, { userName: res.data.username, id: res.data.id});
     } catch (err: any) {
       setErrorMsg(err.response?.data?.message || 'Login failed');
     }

@@ -7,7 +7,8 @@ const Header: React.FC = () => {
   return (
     <header className="bg-purple-100 text-gray-800 p-4 shadow-md w-full fixed top-0 left-0 z-10">
       <div className="flex justify-between items-center container mx-auto">
-        <h1 className="text-xl font-bold">Auction App</h1>
+        {/* <h1 className="text-xl font-bold">Auction App</h1> */}
+        <h1 className="text-xl font-bold">Lee Check</h1>
         <nav>
           <ul className="flex space-x-6">
             <li>
